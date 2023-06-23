@@ -28,7 +28,11 @@ User Tinker to navigate DB:Model data
 
 ## API Endpoints
 `GET|HEAD api/comments` -> comments.index › Api\CommentController@index
+
 `POST api/comments` -> comments.store › Api\CommentController@store
+
 `GET|HEAD api/comments/{comment}` -> comments.show › Api\CommentController@show
+
 `PUT|PATCH api/comments/{comment}` -> comments.update › Api\CommentController@update
+
 `DELETE api/comments/{comment}` -> comments.destroy › Api\CommentController@destroy
