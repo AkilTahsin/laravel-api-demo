@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "37978a66-3df1-4075-8def-a647add61677",
+		"name": "Laravel API Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23493400"
+	},
+	"item": [
+		{
+			"name": "All Comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{root-url}}/api/comments",
+					"host": [
+						"{{root-url}}"
+					],
+					"path": [
+						"api",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{root-url}}/api/comments/1",
+					"host": [
+						"{{root-url}}"
+					],
+					"path": [
+						"api",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Samiul Jackson\",\n    \"text\": \"Wow\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{root-url}}/api/comments/",
+					"host": [
+						"{{root-url}}"
+					],
+					"path": [
+						"api",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Comment",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Naruto Uzumaki\",\n    \"text\": \"Watashi wa Naruto\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{root-url}}/api/comments/6",
+					"host": [
+						"{{root-url}}"
+					],
+					"path": [
+						"api",
+						"comments",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{root-url}}/api/comments/6",
+					"host": [
+						"{{root-url}}"
+					],
+					"path": [
+						"api",
+						"comments",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "root-url",
+			"value": "http://localhost:8000"
+		}
+	]
+}
